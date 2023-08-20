@@ -51,7 +51,7 @@ class Plan implements Calculable, Extendable {
 
     @Override
     public void calculate() {
-        
+
     }
 
     @Override
