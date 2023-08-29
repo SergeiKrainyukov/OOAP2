@@ -1,5 +1,13 @@
+import java.util.Scanner;
+
 public class Simple {
     public static void main(String[] args) {
-        System.out.println("{\"id\":123,\"value\":\"Boris\"}");
+        Scanner scanner = new Scanner(System.in);
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        int aInt = (int) (a * 1000);
+        int bInt = (int) (b * 1000);
+        System.out.println(aInt);
+        System.out.println(bInt);
     }
 }
