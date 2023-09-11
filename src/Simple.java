@@ -1,13 +1,30 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
+import java.util.function.BiConsumer;import java.util.function.Consumer;import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public class Simple {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double a = scanner.nextDouble();
-        double b = scanner.nextDouble();
-        int aInt = (int) (a * 1000);
-        int bInt = (int) (b * 1000);
-        System.out.println(aInt);
-        System.out.println(bInt);
+        AnimalProcessor processor = animal -> {
+
+        };
+        Cat cat = new Cat();
+        processor.process(cat);
     }
 }
+
+class Animal {
+
+}
+
+class Cat extends Animal {
+
+}
+
+interface AnimalProcessor {
+    void process(Animal animal);
+}
+
+
