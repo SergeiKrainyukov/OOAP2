@@ -66,13 +66,15 @@ public abstract class General implements Serializable, Cloneable {
 
     }
 
+    //проверка типа
     protected boolean isGeneralType(Class<?> someClass){
         return this.getClass().equals(someClass) || someClass.isInstance(this);
     }
 
+    //получение реального типа объекта
     protected Class<?> realTypeOf(){
         return this.getClass();
-    };
+    }
 }
 
 class Any extends General {
