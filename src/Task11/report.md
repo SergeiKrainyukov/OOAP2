@@ -10,7 +10,7 @@ class Any extends General {
     //...
 }
 
-class None extends Any {
+final class None extends Any {
     
 }
 ```
