@@ -3,7 +3,7 @@ package Task9;
 import java.io.*;
 import java.lang.reflect.Field;
 
-public abstract class General implements Serializable, Cloneable {
+public class General implements Serializable, Cloneable {
     //копирование объекта
     public General deepCopy() {
         try {
@@ -67,12 +67,12 @@ public abstract class General implements Serializable, Cloneable {
     }
 
     //проверка типа
-    protected boolean isGeneralType(Class<?> someClass){
+    protected boolean isGeneralType(Class<?> someClass) {
         return this.getClass().equals(someClass) || someClass.isInstance(this);
     }
 
     //получение реального типа объекта
-    protected Class<?> realTypeOf(){
+    protected Class<?> realTypeOf() {
         return this.getClass();
     }
 }
