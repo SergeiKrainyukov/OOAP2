@@ -1,17 +1,18 @@
 Решение:
+```java
+class Weapon {
+    private String name;
+    private Int damage;
+    private WeaponType weaponType;
+    
+    public Weapon(String name, Int damage, WeaponType weaponType) {
+        this.name = name;
+        this.damage = damage;
+        this.weaponType = weaponType;
+    }
+}
 
-```kotlin
-class Weapon(
-    val name: String,
-    val damage: Int,
-    val type: WeaponType
-)
+class LaserWeaponType extends WeaponType {}
 
-class WeaponType(
-    val description: String
-)
-
-class LaserWeaponType(val description: String): WeaponType(description)
-
-class ElectricWeaponType(val description: String): WeaponType(description)
+class ElectricWeaponType extends WeaponType {}
 ```
